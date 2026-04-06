@@ -1,28 +1,83 @@
 <p align="center">
-  <img src="logo.png" width="120" />
+  <img src="https://via.placeholder.com/120" width="120" />
 </p>
-# ArcSave – Smart DeFi Savings Protocol
 
-ArcSave is a decentralized savings protocol built on Arc Testnet that helps users earn passive income on their crypto assets.
+<h1 align="center">🚀 ArcSave</h1>
 
-## 🚀 Features
-- Auto yield optimization (testnet simulation)
-- Simple deposit & withdraw system
-- Transparent on-chain transactions
-- Beginner-friendly interface
+<p align="center">
+  Smart DeFi Savings Protocol on Arc Testnet
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Blockchain-Arc_Testnet-blue" />
+  <img src="https://img.shields.io/badge/Status-Building-green" />
+  <img src="https://img.shields.io/badge/DeFi-Savings-orange" />
+</p>
+
+---
+
+## 💡 About ArcSave
+
+ArcSave is a decentralized savings protocol built on **Arc Testnet** that helps users earn passive income on their crypto assets safely and efficiently.
+
+It is designed to make DeFi savings simple, transparent, and beginner-friendly.
+
+---
+
+## ⚡ Features
+
+- 🔄 Auto yield optimization (testnet simulation)
+- 💸 Simple deposit & withdraw system
+- 🔍 Transparent on-chain transactions
+- 🧠 Beginner-friendly interface
+- 🔐 Secure and trustless system
+
+---
 
 ## 🛠 Tech Stack
-- Blockchain: Arc Testnet
-- Smart Contracts (Planned)
-- Frontend (Planned)
 
-## 📌 Vision
-To make DeFi savings easy, secure, and accessible for everyone.
+- 🧱 Blockchain: Arc Testnet  
+- 📜 Smart Contracts: (Planned)  
+- 🌐 Frontend: (Planned)  
+- ⚙️ Backend: (Optional / Future)
 
-## 🔮 Future Plans
-- Cross-chain yield aggregation
-- Mobile-friendly dashboard
-- Advanced analytics tools
+---
+
+## 🎯 Vision
+
+To make DeFi savings **easy, secure, and accessible for everyone**, even for beginners entering the Web3 space.
+
+---
+
+## 🚀 Future Plans
+
+- 🌉 Cross-chain yield aggregation  
+- 📱 Mobile-friendly dashboard  
+- 📊 Advanced analytics tools  
+- 🤖 AI-based yield strategies (future scope)
+
+---
+
+## 📸 Preview
+
+> Coming soon...
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to fork this repo and submit a pull request.
+
+---
 
 ## 👨‍💻 Author
-ArcSave Team
+
+**ArcSave Team**  
+Built with ❤️ on Arc Testnet
+
+---
+
+## ⭐ Support
+
+If you like this project, don't forget to **star ⭐ the repo** and support the journey 🚀
