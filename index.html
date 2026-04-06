@@ -1,26 +1,58 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>ArcSave</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <style>
+    * {
       margin: 0;
-      font-family: Arial;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
       background: #0f172a;
       color: white;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #020617;
+    }
+
+    header h2 {
+      color: #22c55e;
+    }
+
+    nav a {
+      margin-left: 15px;
+      color: #94a3b8;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
       text-align: center;
+      padding: 80px 20px;
     }
-    .container {
-      padding: 50px 20px;
-    }
-    h1 {
+
+    .hero h1 {
       font-size: 40px;
     }
-    p {
+
+    .hero p {
       color: #94a3b8;
+      margin-top: 10px;
     }
+
     .btn {
+      display: inline-block;
       margin-top: 20px;
       padding: 12px 20px;
       background: #22c55e;
@@ -29,15 +61,56 @@
       text-decoration: none;
       font-weight: bold;
     }
-  </style>
-</head>
-<body>
 
-<div class="container">
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      background: #020617;
+    }
+  </style></head><body><header>
+  <h2>ArcSave</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><div class="hero">
   <h1>🚀 ArcSave</h1>
   <p>Smart DeFi Savings Protocol on Arc Testnet</p>
-  <a href="#" class="btn">Get Started</a>
-</div>
-
-</body>
+  <a href="#about" class="btn">Get Started</a>
+</div><section id="about">
+  <h2>💡 About</h2>
+  <p>ArcSave is a decentralized savings protocol that helps users earn passive income on crypto easily and securely.</p>
+</section><section id="features">
+  <h2>⚡ Features</h2>
+  <div class="features">
+    <div class="card">🔄 Auto yield optimization</div>
+    <div class="card">💸 Easy deposit & withdraw</div>
+    <div class="card">🔍 Transparent transactions</div>
+    <div class="card">🔐 Secure system</div>
+  </div>
+</section><section id="contact">
+  <h2>📞 Contact</h2>
+  <p>Connect with us on GitHub</p>
+  <a href="https://github.com/nirajdd23/blockpulse" class="btn">View Repo</a>
+</section><footer>
+  <p>© 2026 ArcSave | Built on Arc Testnet</p>
+</footer></body>
 </html>
