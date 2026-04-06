@@ -1,82 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ArcSave</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>ArcSave</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0b1220, #05080f);
+  color: white;
+  text-align: center;
+}
 
-    .container {
-      padding: 60px 20px;
-    }
+/* HERO */
+.hero {
+  padding: 80px 20px;
+}
 
-    h1 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+.hero h1 {
+  font-size: 36px;
+}
 
-    p {
-      color: #aaa;
-    }
+.hero p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
 
-    .btn {
-      padding: 12px 25px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin: 10px;
-    }
+/* BUTTONS */
+.btn {
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
 
-    .primary {
-      background: #00ff9f;
-      color: black;
-    }
+.primary {
+  background: #00ff9f;
+  color: black;
+}
 
-    .secondary {
-      border: 1px solid #00ff9f;
-      color: #00ff9f;
-    }
+.primary:hover {
+  transform: scale(1.05);
+}
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      padding: 20px;
-      margin: 15px;
-      border-radius: 15px;
-    }
-  </style>
+.secondary {
+  border: 1px solid #00ff9f;
+  color: #00ff9f;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* SECTIONS */
+.section {
+  padding: 50px 20px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat {
+  margin: 15px;
+}
+
+.stat h2 {
+  color: #00ff9f;
+}
+
+/* FLOAT TELEGRAM */
+.telegram {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ff9f;
+  color: black;
+  padding: 12px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
 <!-- HERO -->
-<div class="container">
+<div class="hero">
   <h1>🚀 Earn Passive Yield with ArcSave</h1>
   <p>Secure. Simple. High Returns.</p>
 
-  <!-- 🔥 Get Started (Telegram redirect) -->
   <a href="https://t.me/yourchannel" class="btn primary">Get Started</a>
-
-  <!-- Learn More scroll -->
   <a href="#features" class="btn secondary">Learn More</a>
 </div>
 
+<!-- STATS -->
+<div class="section">
+  <h2>Platform Stats</h2>
+  <div class="stats">
+    <div class="stat">
+      <h2>$1M+</h2>
+      <p>Total Value Locked</p>
+    </div>
+    <div class="stat">
+      <h2>10K+</h2>
+      <p>Users</p>
+    </div>
+    <div class="stat">
+      <h2>25%</h2>
+      <p>Max APY</p>
+    </div>
+  </div>
+</div>
+
 <!-- FEATURES -->
-<div class="container" id="features">
+<div class="section" id="features">
   <h2>Features</h2>
 
-  <div class="card">⚡ High APY</div>
-  <div class="card">🔐 Secure Storage</div>
+  <div class="card">⚡ High APY Returns</div>
+  <div class="card">🔐 Secure Smart Contracts</div>
   <div class="card">💸 Instant Withdrawals</div>
+  <div class="card">🌐 Multi-chain Support</div>
 </div>
+
+<!-- WHY -->
+<div class="section">
+  <h2>Why Choose ArcSave?</h2>
+
+  <div class="card">✅ Non-Custodial</div>
+  <div class="card">✅ Transparent</div>
+  <div class="card">✅ Beginner Friendly</div>
+</div>
+
+<!-- TELEGRAM FLOAT -->
+<a href="https://t.me/yourchannel" class="telegram">Join Telegram 🚀</a>
 
 </body>
 </html>
