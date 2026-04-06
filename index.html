@@ -1,116 +1,82 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>ArcSave</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
     body {
-      background: #0f172a;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
       color: white;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background: #020617;
-    }
-
-    header h2 {
-      color: #22c55e;
-    }
-
-    nav a {
-      margin-left: 15px;
-      color: #94a3b8;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    .hero {
       text-align: center;
-      padding: 80px 20px;
     }
 
-    .hero h1 {
-      font-size: 40px;
+    .container {
+      padding: 60px 20px;
     }
 
-    .hero p {
-      color: #94a3b8;
-      margin-top: 10px;
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #aaa;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #22c55e;
-      color: black;
-      border-radius: 8px;
+      padding: 12px 25px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      margin: 10px;
     }
 
-    section {
-      padding: 60px 20px;
-      text-align: center;
+    .primary {
+      background: #00ff9f;
+      color: black;
     }
 
-    .features {
-      display: grid;
-      gap: 20px;
+    .secondary {
+      border: 1px solid #00ff9f;
+      color: #00ff9f;
     }
 
     .card {
-      background: #020617;
+      background: rgba(255,255,255,0.05);
       padding: 20px;
-      border-radius: 10px;
+      margin: 15px;
+      border-radius: 15px;
     }
+  </style>
+</head>
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #94a3b8;
-      background: #020617;
-    }
-  </style></head><body><header>
-  <h2>ArcSave</h2>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header><div class="hero">
-  <h1>🚀 ArcSave</h1>
-  <p>Smart DeFi Savings Protocol on Arc Testnet</p>
-  <a href="#about" class="btn">Get Started</a>
-</div><section id="about">
-  <h2>💡 About</h2>
-  <p>ArcSave is a decentralized savings protocol that helps users earn passive income on crypto easily and securely.</p>
-</section><section id="features">
-  <h2>⚡ Features</h2>
-  <div class="features">
-    <div class="card">🔄 Auto yield optimization</div>
-    <div class="card">💸 Easy deposit & withdraw</div>
-    <div class="card">🔍 Transparent transactions</div>
-    <div class="card">🔐 Secure system</div>
-  </div>
-</section><section id="contact">
-  <h2>📞 Contact</h2>
-  <p>Connect with us on GitHub</p>
-  <a href="https://github.com/nirajdd23/blockpulse" class="btn">View Repo</a>
-</section><footer>
-  <p>© 2026 ArcSave | Built on Arc Testnet</p>
-</footer></body>
+<body>
+
+<!-- HERO -->
+<div class="container">
+  <h1>🚀 Earn Passive Yield with ArcSave</h1>
+  <p>Secure. Simple. High Returns.</p>
+
+  <!-- 🔥 Get Started (Telegram redirect) -->
+  <a href="https://t.me/yourchannel" class="btn primary">Get Started</a>
+
+  <!-- Learn More scroll -->
+  <a href="#features" class="btn secondary">Learn More</a>
+</div>
+
+<!-- FEATURES -->
+<div class="container" id="features">
+  <h2>Features</h2>
+
+  <div class="card">⚡ High APY</div>
+  <div class="card">🔐 Secure Storage</div>
+  <div class="card">💸 Instant Withdrawals</div>
+</div>
+
+</body>
 </html>
