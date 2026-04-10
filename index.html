@@ -3,179 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <title>ArcSave</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #020617;
-      color: white;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .container {
-      padding: 40px 20px;
-    }
-
-    .btn {
-      padding: 12px 20px;
-      margin: 10px;
-      border: none;
-      border-radius: 10px;
-      background: #00ff99;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-      width: 80%;
-      max-width: 250px;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      background: #00cc77;
-    }
-
-    .card {
-      background: #0f172a;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 12px;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .stat {
-      margin: 15px;
-    }
-
-    .telegram {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #00ff99;
-      padding: 12px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="container">
-    <h1>🚀 Earn Passive Yield with ArcSave</h1>
-    <p>Secure. Simple. High Returns.</p>
+  <h1>🚀 Earn Passive Yield with ArcSave</h1>
+  <p>Secure. Simple. High Returns.</p>
 
-    <button class="btn" onclick="connectWallet()">Get Started</button>
-    <button class="btn" onclick="scrollToSection()">Learn More</button>
+  <div class="buttons">
+    <button onclick="connectWallet()">Connect Wallet</button>
   </div>
 
-  <!-- Stats -->
-  <div class="container">
-    <h2>Platform Stats</h2>
-    <div class="stats">
-      <div class="stat">
-        <h3 id="tvl">$0</h3>
-        <p>Total Value Locked</p>
-      </div>
-      <div class="stat">
-        <h3>10K+</h3>
-        <p>Users</p>
-      </div>
-      <div class="stat">
-        <h3>25%</h3>
-        <p>Max APY</p>
-      </div>
+  <h2>Platform Stats</h2>
+  <div class="stats">
+    <div>$1M+<br><span>Total Value Locked</span></div>
+    <div>10K+<br><span>Users</span></div>
+    <div>25%<br><span>Max APY</span></div>
+  </div>
+
+  <h2>Dashboard</h2>
+
+  <div class="card">
+    <p>Your Wallet:</p>
+    <h3 id="wallet">Not Connected</h3>
+  </div>
+
+  <div class="card">
+    <input id="amount" placeholder="Enter amount" />
+    <div class="buttons">
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
     </div>
   </div>
 
-  <!-- Features -->
-  <div class="container" id="features">
-    <h2>Features</h2>
-
-    <div class="card">⚡ High APY Returns</div>
-    <div class="card">🔐 Secure Smart Contracts</div>
-    <div class="card">💸 Instant Withdrawals</div>
-    <div class="card">🌐 Multi-chain Support</div>
-  </div>
-
-  <!-- Dashboard -->
-  <div class="container">
-    <h2>Dashboard</h2>
-
-    <div class="card">
-      <p>Your Wallet:</p>
-      <h3 id="wallet">Not Connected</h3>
-    </div>
-
-    <div class="card">
-      <input type="number" id="amount" placeholder="Enter amount" />
-      <br><br>
-      <button class="btn" onclick="deposit()">Deposit</button>
-      <button class="btn" onclick="withdraw()">Withdraw</button>
-    </div>
-  </div>
-
-  <!-- Telegram -->
-  <a href="https://t.me/yourgroup" target="_blank" class="telegram">
-    Join Telegram 🚀
-  </a>
-
-  <script>
-    // Wallet Connect
-    async function connectWallet() {
-      if (window.ethereum) {
-        try {
-          const accounts = await window.ethereum.request({
-            method: 'eth_requestAccounts'
-          });
-          document.getElementById("wallet").innerText = accounts[0];
-        } catch (err) {
-          alert("Connection failed");
-        }
-      } else {
-        alert("Install MetaMask!");
-      }
-    }
-
-    // Scroll
-    function scrollToSection() {
-      document.getElementById("features").scrollIntoView({
-        behavior: "smooth"
-      });
-    }
-
-    // Fake Deposit
-    function deposit() {
-      let amt = document.getElementById("amount").value;
-      alert("Deposited: " + amt + " ETH (demo)");
-    }
-
-    function withdraw() {
-      let amt = document.getElementById("amount").value;
-      alert("Withdrawn: " + amt + " ETH (demo)");
-    }
-
-    // Animated TVL
-    let value = 0;
-    let interval = setInterval(() => {
-      value += 20000;
-      document.getElementById("tvl").innerText = "$" + value;
-      if (value >= 1000000) clearInterval(interval);
-    }, 50);
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
+body {
+  background: #020617;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  background: #00e676;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+// Wallet Connect
+async function connectWallet() {
+  if (typeof window.ethereum !== 'undefined') {
+    try {
+      const accounts = await ethereum.request({
+        method: 'eth_requestAccounts'
+      });
+
+      document.getElementById("wallet").innerText = accounts[0];
+    } catch (error) {
+      console.log(error);
+    }
+  } else {
+    alert("Install MetaMask!");
+  }
+}
+
+// Deposit
+function deposit() {
+  let amt = document.getElementById("amount").value;
+
+  if (!amt) {
+    alert("Enter amount");
+    return;
+  }
+
+  alert("Deposited: " + amt);
+}
+
+// Withdraw
+function withdraw() {
+  let amt = document.getElementById("amount").value;
+
+  if (!amt) {
+    alert("Enter amount");
+    return;
+  }
+
+  alert("Withdrawn: " + amt);
+}
