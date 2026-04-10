@@ -1,44 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ArcSave</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<title>ArcSave</title>
 
-  <h1>🚀 Earn Passive Yield with ArcSave</h1>
-  <p>Secure. Simple. High Returns.</p>
-
-  <div class="buttons">
-    <button onclick="connectWallet()">Connect Wallet</button>
-  </div>
-
-  <h2>Platform Stats</h2>
-  <div class="stats">
-    <div>$1M+<br><span>Total Value Locked</span></div>
-    <div>10K+<br><span>Users</span></div>
-    <div>25%<br><span>Max APY</span></div>
-  </div>
-
-  <h2>Dashboard</h2>
-
-  <div class="card">
-    <p>Your Wallet:</p>
-    <h3 id="wallet">Not Connected</h3>
-  </div>
-
-  <div class="card">
-    <input id="amount" placeholder="Enter amount" />
-    <div class="buttons">
-      <button onclick="deposit()">Deposit</button>
-      <button onclick="withdraw()">Withdraw</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<style>
 body {
   background: #020617;
   color: white;
@@ -49,10 +15,6 @@ body {
 
 h1 {
   font-size: 28px;
-}
-
-.buttons {
-  margin: 20px;
 }
 
 button {
@@ -69,12 +31,6 @@ button:hover {
   opacity: 0.8;
 }
 
-.stats {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-}
-
 .card {
   background: #0f172a;
   padding: 20px;
@@ -88,6 +44,31 @@ input {
   width: 60%;
   margin-bottom: 10px;
 }
+</style>
+
+</head>
+<body>
+
+<h1>🚀 Earn Passive Yield with ArcSave</h1>
+<p>Secure. Simple. High Returns.</p>
+
+<button onclick="connectWallet()">Connect Wallet</button>
+
+<h2>Dashboard</h2>
+
+<div class="card">
+  <p>Your Wallet:</p>
+  <h3 id="wallet">Not Connected</h3>
+</div>
+
+<div class="card">
+  <input id="amount" placeholder="Enter amount" />
+  <br>
+  <button onclick="deposit()">Deposit</button>
+  <button onclick="withdraw()">Withdraw</button>
+</div>
+
+<script>
 // Wallet Connect
 async function connectWallet() {
   if (typeof window.ethereum !== 'undefined') {
@@ -95,7 +76,6 @@ async function connectWallet() {
       const accounts = await ethereum.request({
         method: 'eth_requestAccounts'
       });
-
       document.getElementById("wallet").innerText = accounts[0];
     } catch (error) {
       console.log(error);
@@ -128,3 +108,7 @@ function withdraw() {
 
   alert("Withdrawn: " + amt);
 }
+</script>
+
+</body>
+</html>
