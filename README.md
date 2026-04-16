@@ -1,28 +1,31 @@
-# 🚀 BlockPulse
+# 🚀 BlockPulse (Hackathon Edition)
 
-BlockPulse is a lightweight and modern web app designed to track live cryptocurrency prices with a smooth and minimal user experience.
+BlockPulse is a modern crypto dashboard with a twist of Agentic Economy.
 
-## 🔥 Features
-- 📊 Real-time crypto prices
-- ⚡ Fast and simple UI
-- 🌐 Uses public API
-- 💻 Beginner-friendly project
+## 🔥 What’s New (Hackathon Upgrade)
+This project introduces **Micropayments using USDC**:
+
+- 💸 Users unlock premium crypto data
+- 🤖 Agent-based interaction concept
+- ⚡ Simulated gas-free transactions
+- 🧠 Built for Agentic Economy Hackathon
+
+## 🎯 Use Case
+Users can access real-time crypto data.  
+Premium insights require a **small payment (0.000001 USDC)**.
 
 ## 🛠 Tech Stack
 - HTML
 - CSS
 - JavaScript
 
-## 📸 Preview
-(Add screenshot here later)
+## 🚀 Demo
+👉 (Add your GitHub Pages link here)
 
-## 🚀 How to Run
-1. Download or clone the repo
-2. Open index.html in browser
-
-## 🌍 Live Demo
-(Will add soon)
+## 💡 Future Scope
+- Real Circle API integration
+- AI-based crypto insights
+- Automated agent payments
 
 ---
-
-⭐ Don’t forget to star this repo!
+⭐ Don't forget to star this repo!
